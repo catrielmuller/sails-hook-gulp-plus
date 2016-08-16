@@ -1,6 +1,6 @@
 {
-  "name": "sails-hook-gulp",
-  "version": "0.0.1",
+  "name": "sails-hook-gulp-plus",
+  "version": "0.0.2",
   "description": "Implements gulp support in Sails",
   "main": "index.js",
   "scripts": {
@@ -8,23 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/seth2810/sails-hook-gulp.git"
+    "url": "git://github.com/catrielmuller/sails-hook-gulp-plus.git"
   },
   "keywords": [
     "gulp.js",
     "sails.js",
     "hook"
   ],
-  "author": "Roman Gafurov",
+  "author": "Catriel Müller",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seth2810/sails-hook-gulp/issues"
+    "url": "https://github.com/catrielmuller/sails-hook-gulp-plus/issues"
   },
-  "homepage": "https://github.com/seth2810/sails-hook-gulp",
+  "homepage": "https://github.com/catrielmuller/sails-hook-gulp-plus",
   "maintainers": [
     {
-      "name": "seth2810",
-      "email": "gafurov.roma89@gmail.com"
+      "name": "Catriel Müller",
+      "email": "catrielmuller@gmail.com"
     }
   ],
   "sails": {
