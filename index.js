@@ -72,8 +72,20 @@ module.exports = function (sails) {
       }
       
       var execArgs = process.execArgv.slice(0);
-      if(execArgs.indexOf('--debug') !== -1) {
-        execArgs.splice(execArgs.indexOf('--debug'),1)
+
+      if (typeof Array.prototype.reIndexOf === 'undefined') {
+          Array.prototype.reIndexOf = function (rx) {
+              for (var i in this) {
+                  if (this[i].toString().match(rx)) {
+                      return i;
+                  }
+              }
+              return -1;
+          };
+      }
+
+      if(execArgs.reIndexOf('--debug={0,1}[0-9]*') !== -1) {
+        execArgs.splice(execArgs.reIndexOf('--debug={0,1}[0-9]*'), 1)
       }
 
       // Fork Grunt child process

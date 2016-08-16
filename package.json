@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-gulp-plus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Implements gulp support in Sails",
   "main": "index.js",
   "scripts": {
